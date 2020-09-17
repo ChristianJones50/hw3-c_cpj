@@ -9,6 +9,8 @@ int digit_sum(int n) {
     int digit = n % 10; // Stores Last digit
     n = n / 10;
     return digit + digit_sum(n);
+  } else {
+    return 0;
   }
 }
 
